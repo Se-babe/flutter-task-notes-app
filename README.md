@@ -1,16 +1,17 @@
-# task_notes_manager
+# Task Notes Manager App
 
-A new Flutter project.
+This is a simple task and notes management application built with Flutter for my course assignment.
 
-## Getting Started
+## Student Details
 
-This project is a starting point for a Flutter application.
+* **Name:** [Your Full Name Here]
+* **Student Number:** [Your Student Number]
+* **Reg. No.:** [Your Registration Number]
 
-A few resources to get you started if this is your first Flutter project:
+## How to Run the Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1.  Ensure you have the Flutter SDK installed.
+2.  Clone this repository: `git clone https://github.com/YOUR_USERNAME/flutter-task-notes-app.git`
+3.  Navigate into the project directory: `cd flutter-task-notes-app`
+4.  Install dependencies: `flutter pub get`
+5.  Run the app: `flutter run`
