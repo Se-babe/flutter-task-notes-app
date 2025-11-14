@@ -150,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const Padding(
             padding: EdgeInsets.all(16.0),
             child: Text(
-              "Welcome to My Tasks & Notes 👋",
+              "Welcome to My Tasks & Notes App",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ),
