@@ -1,30 +1,37 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:task_notes_manager/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('App launches and shows welcome message', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const TaskNotesManagerApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Wait for the app to fully load
+    await tester.pumpAndSettle();
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    // Verify that the welcome message is displayed
+    expect(find.text('Welcome to My Tasks & Notes 👋'), findsOneWidget);
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify that the floating action button is present
+    expect(find.byIcon(Icons.add), findsOneWidget);
+
+    // Verify that the theme toggle is present
+    expect(find.text('Light Theme Enabled'), findsOneWidget);
+  });
+
+  testWidgets('Theme toggle works', (WidgetTester tester) async {
+    await tester.pumpWidget(const TaskNotesManagerApp());
+    await tester.pumpAndSettle();
+
+    // Initially should show light theme
+    expect(find.text('Light Theme Enabled'), findsOneWidget);
+
+    // Tap the theme switch
+    await tester.tap(find.byType(Switch));
+    await tester.pumpAndSettle();
+
+    // Should now show dark theme
+    expect(find.text('Dark Theme Enabled'), findsOneWidget);
   });
 }
