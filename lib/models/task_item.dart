@@ -33,7 +33,7 @@ class TaskItem {
       'isCompleted': isCompleted ? 1 : 0,
     };
 
-    // Only add ID if it's not null (required for UPDATE operations)
+    // Only add ID if it's not null
     if (id != null) {
       map['id'] = id!;
     }

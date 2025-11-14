@@ -361,10 +361,10 @@ packages:
     dependency: "direct main"
     description:
       name: sqflite_common_ffi_web
-      sha256: "61ea702e7aba727f28be7ead00b84c19c745cd4a4934d0c41473303df11ac9ea"
+      sha256: "344d8bdb12120ae66634b1398ca0a094133d7562640d02860581e1e00643aaeb"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.5+4"
+    version: "1.0.1"
   sqflite_darwin:
     dependency: transitive
     description:
