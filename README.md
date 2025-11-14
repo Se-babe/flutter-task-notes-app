@@ -14,13 +14,13 @@ A Flutter task management application that allows users to create, view, update,
 - Web and mobile support
 
 ## Features
-- ✅ Create tasks with title, description, and priority levels (High, Medium, Low)
-- ✅ View all tasks in a scrollable list
-- ✅ Toggle task completion status
-- ✅ Delete tasks with swipe-to-dismiss gesture
-- ✅ Dark/Light theme with persistent preference
-- ✅ SQLite local database for data persistence
-- ✅ Web platform support
+-  Create tasks with title, description, and priority levels (High, Medium, Low)
+-  View all tasks in a scrollable list
+-  Toggle task completion status
+-  Delete tasks with swipe-to-dismiss gesture
+-  Dark/Light theme with persistent preference
+-  SQLite local database for data persistence
+-  Web platform support
 
 ## Technologies Used
 - Flutter SDK
@@ -37,7 +37,7 @@ A Flutter task management application that allows users to create, view, update,
 ### Installation Steps
 1. Clone the repository:
 ```bash
-   git clone https://github.com/YOUR_USERNAME/flutter-task-notes-app.git
+   git clone https://github.com/Se-babe/flutter-task-notes-app.git
    cd flutter-task-notes-app
 ```
 
@@ -77,9 +77,9 @@ web/
 ```
 
 ## Assignment Requirements Met
-- ✅ Task 1: Git & GitHub setup
-- ✅ Task 2: UI with forms and dynamic lists
-- ✅ Task 3: Data modeling with JSON serialization
-- ✅ Task 4A: SharedPreferences for theme
-- ✅ Task 4B: SQLite database with CRUD operations
-- ✅ Bonus: Delete functionality implemented
+- Task 1: Git & GitHub setup
+- Task 2: UI with forms and dynamic lists
+- Task 3: Data modeling with JSON serialization
+- Task 4A: SharedPreferences for theme
+- Task 4B: SQLite database with CRUD operations
+- Bonus: Delete functionality implemented
